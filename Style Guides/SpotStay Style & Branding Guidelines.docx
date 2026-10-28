@@ -1,0 +1,304 @@
+SpotStay Style & Branding Guidelines
+Brand overview
+We want SpotStay to feel like walking into a well-kept guesthouse: bright, calm, and clearly cared for. That's why most of the screen is soft grey and white, the text is a friendly near-black, and there's exactly one splash of color — our coral — pointing you to the thing you came to do.
+If you're ever unsure about a design decision, ask yourself: would this make a host or guest feel welcome, or would it make them feel like they're filling in a form?
+How we want SpotStay to feel
+Welcoming. Friendly words, plenty of breathing room, soft rounded corners. Nothing sharp or shouty.
+Trustworthy. People are handing us their homes and their holidays. Calm neutrals and honest, clearly labelled numbers go a long way.
+Effortless. Each screen should have one obvious next step. If we need two big buttons, we probably need two screens.
+Optimistic. Coral is our bit of energy. It works because we use it sparingly — the moment it's everywhere, it stops meaning anything.
+Principles we design by
+The content is the star. Property photos and key numbers should do the talking. Our UI is the frame, not the painting.
+One accent, on purpose. Coral marks the primary action. We don't use it to decorate.
+Light and flat. We get depth from white cards sitting on a grey background, not from heavy shadows or borders.
+Stick to the rhythm. Every gap comes from our spacing scale. It's a small thing that makes the whole product feel put together.
+Mobile isn't an afterthought. Lots of hosts manage their listings from their phones, so every layout should fold neatly into one column at 768px.
+A quick note on our name: it's SpotStay — one word, capital S twice. We see "Spotstay" and "Spot Stay" creep into decks and copy all the time, so please keep an eye out for them.
+Color palette
+Our palette is deliberately small: six colors, and that's it. A good rule of thumb is that about 90% of any screen should be neutral (greys and white), and coral should take up well under 10%. If a screen looks "pink", something has gone wrong.
+Token
+Hex
+What we call it
+When to use it
+Where it lives today
+--color-brand
+#FF385C
+SpotStay Coral
+The main action on a screen, small brand moments
+.btn-primary background
+--color-brand-hover
+#E61E4D
+Deep Coral
+Hover and pressed states for anything coral
+.btn-primary:hover
+--color-text-primary
+#222222
+Ink
+Headings, numbers, body text
+h1, .stat-value, .empty-state h2
+--color-text-secondary
+#717171
+Slate
+Subtitles, labels, helper text
+.subtitle, .stat-label, .empty-state p
+--color-surface
+#FFFFFF
+Card White
+Cards and anything that sits "on top"
+.stat-card, .empty-state
+--color-canvas
+#F7F7F7
+Mist
+The app background
+.app
+
+How we use them
+Coral is for doing things. Primary buttons, an active tab, a selected filter, our logo mark. Please don't use it for big backgrounds, decorative shapes or paragraphs of text.
+Text on coral is always white. No exceptions.
+Ink, not black. We never use pure #000000 — Ink (#222222) is softer and easier on the eyes.
+Slate is the lightest readable grey. If you're tempted to go lighter for "subtle" text, it probably won't pass contrast. Talk to us first.
+Cards go on Mist. White cards on the grey canvas is what gives SpotStay its layered feel. A white card on a white background just disappears.
+We don't have status colors yet. Success, warning and error aren't in the base CSS. If you're building a form or an alert, flag it with the design team so we can add proper tokens rather than everyone picking their own green.
+A heads-up on contrast
+We ran our main color pairs against WCAG 2.1:
+Pair
+Ratio
+Passes
+Ink #222222 on white
+15.9:1
+AAA
+Slate #717171 on white
+4.9:1
+AA
+Slate #717171 on Mist #F7F7F7
+4.6:1
+AA
+White on Deep Coral #E61E4D
+4.5:1
+AA
+White on Coral #FF385C
+3.5:1
+AA for large text only
+
+The one to watch is our main button. White 16px text on #FF385C is a bit under the AA bar for regular-sized text. We're keeping it for now because it's core to how the brand looks, but if a project has strict accessibility requirements, use Deep Coral (#E61E4D) as the resting color instead. We'll revisit this as a team.
+Typography
+We keep type simple: one clean sans-serif, five sizes, three weights. Hierarchy should come from size and weight — if you find yourself reaching for a new color to make something stand out, try making it bolder or bigger first.
+Our font
+Right now the app uses each device's own system font, which keeps things fast and crisp everywhere. This is the stack we use:
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+We've talked about licensing a brand typeface down the line. If we do, it'll be a rounded geometric sans (we've been looking at options like Inter and Nunito Sans) and it'll simply slot in at the front of this stack.
+The type scale
+Style
+Desktop
+Mobile (≤768px)
+Weight
+Color
+In the CSS
+Page title
+2.5rem (40px)
+2rem (32px)
+600
+Ink
+.dashboard-header h1
+Big number
+2rem (32px)
+2rem (32px)
+700
+Ink
+.stat-value
+Section title
+1.5rem (24px)
+1.5rem (24px)
+600 (we recommend setting this explicitly)
+Ink
+.empty-state h2
+Body and buttons
+1rem (16px)
+1rem (16px)
+400 body, 600 buttons
+Slate, or white on coral
+.subtitle, .btn-primary
+Small label
+0.9rem (14.4px)
+0.9rem (14.4px)
+400
+Slate
+.stat-label
+
+Weights, and when we use them
+400 Regular for most reading: body copy, subtitles, labels.
+600 Semibold for titles and buttons. This is our "pay attention" weight.
+700 Bold only for numbers. Keeping bold for stats is what makes them pop on the dashboard.
+A few habits we'd love everyone to keep
+Leave 0.5rem between a title and the line under it. It's small, but it keeps headings and their subtitles feeling like a pair.
+Sentence case everywhere: "Add property", not "Add Property" or "ADD PROPERTY". All caps reads like shouting.
+Keep paragraphs to about 75 characters per line so they're comfortable to read.
+Emphasize with weight, not italics or underlines. Underlines look like links.
+Layout & spacing
+Everything lives in a centered container that tops out at 1400px wide, with 2rem (32px) of padding around it, sitting on our grey Mist background. We never let the page scroll sideways — if something's overflowing horizontally, that's a bug, not a feature.
+Our spacing scale
+All our spacing is based on 1rem = 16px. These six steps cover pretty much everything we've needed so far:
+Token
+Value
+Where you'll see it
+--space-2xs
+0.5rem (8px)
+Between a title and its subtitle, or a number and its label
+--space-xs
+0.875rem (14px)
+Top and bottom padding inside buttons
+--space-sm
+1rem (16px)
+Page padding on mobile, gap in the stacked header, icon to title
+--space-md
+1.5rem (24px)
+Inside cards, between stat cards, button side padding
+--space-lg
+2rem (32px)
+Page padding, gaps between sections and property cards
+--space-xl
+4rem (64px)
+Top and bottom of empty states
+
+If you genuinely need a value that isn't here, that's fine — just add it as a token and let the team know, rather than dropping a one-off number into the CSS.
+How a typical page is put together
+Header. Page title and subtitle on the left, the main button on the right, lined up at the top. 2rem of space below.
+Stats row. A row of stat cards, each at least 200px wide with 1.5rem between them. Another 2rem below.
+Main content. Usually the property grid. If there's nothing to show yet, the empty state goes here instead.
+The grids, in plain terms
+Stats use repeat(auto-fit, minmax(200px, 1fr)). The cards stretch to fill the row, so four stats on a wide screen look balanced.
+Properties use repeat(auto-fill, minmax(320px, 1fr)) with a 2rem gap. The difference matters: auto-fill keeps empty columns, so if a host only has two listings, their cards stay a normal size instead of stretching across the whole page.
+Embedded content like maps or calendars (.iframe-section) goes full width with 2rem above and below.
+Components
+Pretty much every SpotStay component is either a white card or a coral button: rounded corners, no border, no shadow. The specs below come straight from our production CSS, so if you spot a mismatch between this page and the app, let us know — one of them is wrong.
+Primary button
+This is the most important component we have, so it gets the most detail.
+Property
+Value
+Background
+#FF385C, darkening to #E61E4D on hover
+Text
+White, 1rem, weight 600
+Padding
+0.875rem top/bottom, 1.5rem left/right (14px × 24px)
+Corners
+8px radius
+Border
+None
+On hover
+Darkens and lifts 1px (translateY(-1px))
+On click
+Settles back down (translateY(0))
+Transition
+all 0.2s ease
+
+That tiny 1px lift on hover is one of our favorite details. It makes the button feel physical without being showy.
+One per screen. On desktop it sits top-right in the header.
+Labels are short, friendly verbs in sentence case: "Add property", "Book now", "Save changes". Avoid "Submit" and "OK" — they don't tell anyone what happens next.
+Secondary buttons aren't coral. We don't have a secondary button in the CSS yet. Until we do, our suggestion is a white button with a 1px Ink border and Ink text, same size and corners as the primary.
+Stat card
+Stat cards give hosts a quick read on how they're doing.
+White background, 1.5rem padding, 12px corners, no shadow.
+The number is big and bold (2rem, 700, Ink), with the label 0.5rem underneath (0.9rem, Slate).
+One number per card. If you want to show two, that's two cards.
+Format numbers like a person would read them: "₹12,400", "4.8 ★", "92%". Labels should be short and clear: "Total properties", "Avg. nightly rate".
+Property cards and grid
+This is where SpotStay really comes to life, and it's mostly down to the photos.
+Cards are at least 320px wide with 2rem between them, dropping to a single column on mobile.
+Same surface as stat cards: white with 12px corners. Photo first, then the title (Ink, 600) and details (Slate) underneath.
+Use bright, real photos in landscape, and crop them all the same way (4:3 or 3:2 works well). A grid of mismatched crops looks messy fast.
+Empty state
+Empty states are often the very first thing a new host sees, so we put a bit of care into them.
+White panel, 12px corners, everything centered, 4rem padding top and bottom, 2rem on the sides.
+From top to bottom: a big icon (4rem), a title (1.5rem, Ink), one line of explanation (Slate), and the primary button.
+Keep the copy encouraging and point to the next step. For example: "No properties yet" and then "Add your first place to start welcoming guests."
+Dashboard header
+Page title (2.5rem, 600, Ink) with a one-line subtitle underneath (1rem, Slate).
+The primary button sits on the right, lined up with the top of the title.
+Embedded content
+Anything from outside SpotStay (maps, calendars, booking widgets) goes in .iframe-section: full width, 2rem above and below.
+Where you can, wrap it in a white card with 12px corners. Third-party widgets can look a bit foreign otherwise, and this helps them blend in.
+Shape, elevation & motion
+We only use two corner sizes, almost no shadows, and one gentle transition. Keeping this list short is a big part of why the product feels consistent.
+Token
+Value
+What it's for
+--radius-sm
+8px
+Buttons, inputs, chips and other small controls
+--radius-md
+12px
+Cards, panels, empty states, embeds
+--transition-base
+0.2s ease
+Every hover, press and state change
+--lift-hover
+translateY(-1px)
+The little lift on buttons
+
+An easy way to remember the radii: small things get 8px, containers get 12px.
+Shadows (or rather, the lack of them)
+Our surfaces are flat. Cards stand out because they're white on grey, not because they're floating. The exception is things that genuinely sit above the page, like dropdown menus, modals or a property card you're hovering over. For those, use one soft shadow — 0 6px 16px rgba(0, 0, 0, 0.12) — and please don't stack shadows or make them darker.
+Motion
+Animation should feel like a quick, polite nod, not a performance.
+Keep transitions at 0.2s with ease. Skip bounces, spins and slow fades.
+Hover can lift something by 1px, and it should settle back when clicked.
+Some people get motion sick or simply prefer less movement, so always respect their system setting:
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; transform: none !important; }
+}
+Responsive behavior
+We have just one breakpoint, at 768px. Below that, everything stacks into a single column and the spacing tightens up a bit. One breakpoint keeps things predictable for both designers and engineers.
+What changes
+Desktop (above 768px)
+Mobile (768px and below)
+Page padding
+2rem
+1rem
+Header
+Title on the left, button on the right
+Stacked: title, then button, 1rem apart
+Page title
+2.5rem
+2rem
+Stat cards
+As many as fit, 200px minimum
+One per row
+Property cards
+As many as fit, 320px minimum
+One per row
+
+Things to keep in mind on mobile
+Anything tappable should be at least 44 × 44px. Our primary button is about 48px tall, so it's already fine.
+Consider making the main button full width on mobile. It's much easier to hit with a thumb.
+Before you hand off a design, check it at 360px, 768px, 1024px and 1440px. Most layout surprises show up at one of those.
+Voice, accessibility & tokens
+If SpotStay were a person, it'd be a good host: warm, helpful, and not overly chatty. Our words should sound like that too.
+How we write
+Here are a few real-world examples of the difference we're going for:
+Sounds like SpotStay
+Doesn't sound like SpotStay
+"Add your first place to start welcoming guests."
+"No data found. Click button to create entity."
+"You're all set — your listing is live."
+"Operation completed successfully."
+"We couldn't save that. Try again in a moment."
+"Error 500: request failed."
+
+Talk to people as "you", and to SpotStay as "we".
+Short sentences, everyday words. We say "place", "stay" and "guests", not "inventory" or "units".
+Emoji are fine as empty-state illustrations, but please keep them out of buttons and headings.
+Accessibility checklist
+Run through this before handing anything off. It takes two minutes and saves a lot of rework.
+Text meets the contrast ratios in the Color palette section.
+Everything clickable has a visible focus style. Ours is outline: 2px solid #222222; outline-offset: 2px.
+Buttons are actual <button> elements with labels that make sense on their own.
+Property photos have useful alt text, like "Sunlit two-bedroom apartment in Indiranagar", not "image1.jpg".
+Nothing relies on color alone to get its meaning across.
+Our short list of do's and don'ts
+Do save coral for the one thing that matters most on a screen.
+Do let photos and numbers lead. The UI should stay out of the way.
+Don't put borders or shadows on cards that are just sitting there.
+Don't invent new colors, radii or spacing values. If the tokens below don't cover it, come and talk to us.
+Don't borrow another company's logo, name or typeface. SpotStay takes cues from the best hospitality marketplaces, but it needs to look like itself.
+
