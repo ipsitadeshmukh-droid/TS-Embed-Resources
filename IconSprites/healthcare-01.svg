@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="rd-icon-spotter" viewBox="0 0 18 18">
+      <!-- Medical cross - vertical bar -->
+      <rect x="7.5" y="3" width="3" height="12" rx="0.8" fill="#0f766e"/>
+      <!-- Medical cross - horizontal bar -->
+      <rect x="3" y="7.5" width="12" height="3" rx="0.8" fill="#0f766e"/>
+      <!-- Sparkle (AI touch) -->
+      <circle cx="15" cy="2" r="0.7" fill="#f9d923"/>
+      <line x1="15" y1="0.8" x2="15" y2="3.2" stroke="#f9d923" stroke-width="0.5"/>
+      <line x1="13.8" y1="2" x2="16.2" y2="2" stroke="#f9d923" stroke-width="0.5"/>
+    </symbol>
+  </defs>
+</svg>

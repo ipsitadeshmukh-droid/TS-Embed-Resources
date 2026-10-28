@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="rd-icon-spotter" viewBox="0 0 18 18">
+      <!-- Central gear (manufacturing) -->
+      <circle cx="9" cy="9.5" r="2" fill="none" stroke="#ea580c" stroke-width="1"/>
+      <!-- Gear teeth (4 small rectangles) -->
+      <rect x="8.5" y="6.8" width="1" height="0.7" fill="#ea580c"/>
+      <rect x="12.8" y="9" width="0.7" height="1" fill="#ea580c"/>
+      <rect x="8.5" y="12.5" width="1" height="0.7" fill="#ea580c"/>
+      <rect x="6.5" y="9" width="0.7" height="1" fill="#ea580c"/>
+      <!-- IoT nodes (small circles for connected sensors) -->
+      <circle cx="4" cy="5.5" r="0.5" fill="#ea580c"/>
+      <circle cx="14" cy="5.5" r="0.5" fill="#ea580c"/>
+      <circle cx="15" cy="10" r="0.5" fill="#ea580c"/>
+      <circle cx="9" cy="14" r="0.5" fill="#ea580c"/>
+      <!-- Network lines connecting to central gear -->
+      <line x1="9" y1="9.5" x2="4" y2="5.5" stroke="#ea580c" stroke-width="0.4" stroke-opacity="0.5"/>
+      <line x1="9" y1="9.5" x2="14" y2="5.5" stroke="#ea580c" stroke-width="0.4" stroke-opacity="0.5"/>
+      <line x1="9" y1="9.5" x2="15" y2="10" stroke="#ea580c" stroke-width="0.4" stroke-opacity="0.5"/>
+      <line x1="9" y1="9.5" x2="9" y2="14" stroke="#ea580c" stroke-width="0.4" stroke-opacity="0.5"/>
+      <!-- Sparkle (AI touch) -->
+      <circle cx="15" cy="2" r="0.7" fill="#f9d923"/>
+      <line x1="15" y1="0.8" x2="15" y2="3.2" stroke="#f9d923" stroke-width="0.5"/>
+      <line x1="13.8" y1="2" x2="16.2" y2="2" stroke="#f9d923" stroke-width="0.5"/>
+    </symbol>
+  </defs>
+</svg>

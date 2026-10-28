@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="rd-icon-spotter" viewBox="0 0 18 18">
+      <!-- Large central sparkle -->
+      <g>
+        <line x1="9" y1="4" x2="9" y2="14" stroke="#f9d923" stroke-width="1"/>
+        <line x1="4" y1="9" x2="14" y2="9" stroke="#f9d923" stroke-width="1"/>
+        <line x1="6" y1="6" x2="12" y2="12" stroke="#f9d923" stroke-width="1"/>
+        <line x1="12" y1="6" x2="6" y2="12" stroke="#f9d923" stroke-width="1"/>
+      </g>
+      <!-- Small sparkle top left -->
+      <g>
+        <line x1="4" y1="3" x2="4" y2="5" stroke="#f9d923" stroke-width="0.7"/>
+        <line x1="3" y1="4" x2="5" y2="4" stroke="#f9d923" stroke-width="0.7"/>
+      </g>
+      <!-- Small sparkle bottom right -->
+      <g>
+        <line x1="14" y1="13" x2="14" y2="15" stroke="#f9d923" stroke-width="0.7"/>
+        <line x1="13" y1="14" x2="15" y2="14" stroke="#f9d923" stroke-width="0.7"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>

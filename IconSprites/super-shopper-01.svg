@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="rd-icon-spotter" viewBox="0 0 18 18">
+      <!-- Basket body -->
+      <rect x="4" y="8" width="10" height="5" rx="1.5" fill="#fff" stroke="#2d9cdb" stroke-width="1"/>
+      <!-- Basket handles -->
+      <line x1="6" y1="8" x2="9" y2="4" stroke="#2d9cdb" stroke-width="1"/>
+      <line x1="12" y1="8" x2="9" y2="4" stroke="#2d9cdb" stroke-width="1"/>
+      <!-- Sparkle/star (AI touch) -->
+      <circle cx="14" cy="6" r="0.7" fill="#f9d923"/>
+      <line x1="14" y1="4.8" x2="14" y2="7.2" stroke="#f9d923" stroke-width="0.5"/>
+      <line x1="12.8" y1="6" x2="15.2" y2="6" stroke="#f9d923" stroke-width="0.5"/>
+    </symbol>
+  </defs>
+</svg>

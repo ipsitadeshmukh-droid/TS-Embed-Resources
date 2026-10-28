@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="rd-icon-spotter" viewBox="0 0 18 18">
+      <!-- Rising bar chart - corporate finance -->
+      <rect x="1.5" y="12" width="3" height="4" rx="0.5" fill="#0f2044"/>
+      <rect x="7" y="7" width="3" height="9" rx="0.5" fill="#1a3a6b"/>
+      <rect x="12.5" y="3" width="3" height="13" rx="0.5" fill="#2d5a8e"/>
+      <line x1="0.5" y1="16.5" x2="17.5" y2="16.5" stroke="#0f2044" stroke-width="0.6"/>
+      <!-- Sparkle (AI touch) -->
+      <circle cx="16.5" cy="1.5" r="0.6" fill="#f9d923"/>
+      <line x1="16.5" y1="0.4" x2="16.5" y2="2.6" stroke="#f9d923" stroke-width="0.5"/>
+      <line x1="15.4" y1="1.5" x2="17.6" y2="1.5" stroke="#f9d923" stroke-width="0.5"/>
+    </symbol>
+  </defs>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+  <!-- Outer gold coin rim -->
+  <circle cx="8.5" cy="10" r="5.8" fill="#fef08a" stroke="#d97706" stroke-width="0.8"/>
+  <!-- Inner green coin face -->
+  <circle cx="8.5" cy="10" r="4.6" fill="#065f46"/>
+  <!-- € C arc: circle center (7.5, 10) r=2.8, opening on right at ±30° -->
+  <path d="M 9.9 8.6 A 2.8 2.8 0 1 0 9.9 11.4" fill="none" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round"/>
+  <!-- Upper horizontal bar -->
+  <line x1="6.0" y1="9.1" x2="10.5" y2="9.1" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round"/>
+  <!-- Lower horizontal bar -->
+  <line x1="6.0" y1="10.9" x2="10.5" y2="10.9" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round"/>
+  <!-- Sparkle (AI touch) -->
+  <circle cx="15" cy="2" r="0.7" fill="#f9d923"/>
+  <line x1="15" y1="0.8" x2="15" y2="3.2" stroke="#f9d923" stroke-width="0.5"/>
+  <line x1="13.8" y1="2" x2="16.2" y2="2" stroke="#f9d923" stroke-width="0.5"/>
+</svg>

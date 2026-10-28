@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="rd-icon-spotter" viewBox="0 0 18 18">
+      <!-- Erlenmeyer flask body -->
+      <path d="M 6 2 L 12 2 L 12 8 L 14.5 14 Q 15 16 13.5 16 L 4.5 16 Q 3 16 3.5 14 L 6 8 Z" fill="#ccfbf1" stroke="#0d9488" stroke-width="0.8"/>
+      <!-- Liquid fill -->
+      <path d="M 5.5 12 L 12.5 12 L 14.5 14 Q 15 16 13.5 16 L 4.5 16 Q 3 16 3.5 14 Z" fill="#0d9488" opacity="0.75"/>
+      <!-- Sparkle (AI touch) -->
+      <circle cx="15" cy="2" r="0.7" fill="#f9d923"/>
+      <line x1="15" y1="0.8" x2="15" y2="3.2" stroke="#f9d923" stroke-width="0.5"/>
+      <line x1="13.8" y1="2" x2="16.2" y2="2" stroke="#f9d923" stroke-width="0.5"/>
+    </symbol>
+  </defs>
+</svg>

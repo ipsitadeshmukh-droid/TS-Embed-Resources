@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+  <!-- Capsule pill - left half (red) -->
+  <path d="M 9 7.5 A 5 2 0 1 0 9 11.5 Z" fill="#dc2626" stroke="#991b1b" stroke-width="0.8"/>
+  <!-- Capsule pill - right half (white) -->
+  <path d="M 9 7.5 A 5 2 0 1 1 9 11.5 Z" fill="#fff" stroke="#991b1b" stroke-width="0.8"/>
+  <!-- Sparkle (AI touch) -->
+  <circle cx="15" cy="2" r="0.7" fill="#f9d923"/>
+  <line x1="15" y1="0.8" x2="15" y2="3.2" stroke="#f9d923" stroke-width="0.5"/>
+  <line x1="13.8" y1="2" x2="16.2" y2="2" stroke="#f9d923" stroke-width="0.5"/>
+</svg>
